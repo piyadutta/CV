@@ -12,7 +12,7 @@
   <meta property="og:title" content="PIYA DUTTA - Portfolio & Resume" />
   <meta property="og:description" content="Diploma in Civil Engineering & Experienced Computer Teacher skilled in Tally GST, Graphic Design, and Web Development." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/assets/profile.jpg" />
+  <meta property="og:image" content="./assets/profile.jpg" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="./src/style.css" />
 </head>
 <body>
 
@@ -58,7 +58,7 @@
         <button class="btn btn-outline preview-cv-btn" id="open-cv-modal-nav">
           <i class="fa-solid fa-eye"></i> View CV
         </button>
-        <a href="/assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" class="btn btn-primary download-cv-btn">
+        <a href="./assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary download-cv-btn">
           <i class="fa-solid fa-file-arrow-down"></i> Download CV
         </a>
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
@@ -68,7 +68,8 @@
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
+  <!-- Mobile Drawer Overlay & Menu -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay"></div>
   <div class="mobile-drawer" id="mobile-drawer">
     <div class="drawer-header">
       <span class="drawer-logo">PIYA DUTTA</span>
@@ -88,7 +89,7 @@
       <a href="#contact" class="drawer-item"><i class="fa-solid fa-paper-plane"></i> Contact</a>
     </div>
     <div class="drawer-footer">
-      <a href="/assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" class="btn btn-primary w-100">
+      <a href="./assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-100">
         <i class="fa-solid fa-download"></i> Download CV (PDF)
       </a>
     </div>
@@ -109,7 +110,7 @@
           </p>
 
           <div class="hero-ctas">
-            <a href="/assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" class="btn btn-primary btn-lg shadow-glow">
+            <a href="./assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg shadow-glow">
               <i class="fa-solid fa-file-pdf"></i> Download CV
             </a>
             <a href="#contact" class="btn btn-secondary btn-lg">
@@ -141,7 +142,7 @@
         <div class="hero-image-wrapper">
           <div class="profile-card">
             <div class="image-glow"></div>
-            <img src="/assets/profile.jpg" alt="Piya Dutta Profile" class="profile-img" />
+            <img src="./assets/profile.jpg" alt="Piya Dutta Profile" class="profile-img" />
             <div class="profile-status">
               <i class="fa-solid fa-circle-check"></i> Available for Full-Time Roles
             </div>
@@ -663,7 +664,7 @@
 
             <div class="contact-cv-cta">
               <p>Need a printable copy of my resume?</p>
-              <a href="/assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" class="btn btn-outline btn-sm">
+              <a href="./assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
                 <i class="fa-solid fa-download"></i> Download Piya_Dutta_CV.pdf
               </a>
             </div>
@@ -739,7 +740,7 @@
       <div class="footer-cv-download">
         <h4 class="footer-title">Curriculum Vitae</h4>
         <p>Download the official PDF CV for recruitment review.</p>
-        <a href="/assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" class="btn btn-primary btn-sm">
+        <a href="./assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
           <i class="fa-solid fa-file-pdf"></i> Download CV (PDF)
         </a>
       </div>
@@ -766,10 +767,8 @@
         <button class="modal-close" id="close-cv-modal"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div class="modal-body cv-preview-body">
-        <iframe src="/assets/Piya_Dutta_CV.pdf" id="cv-iframe" title="Piya Dutta CV PDF Preview"></iframe>
-      </div>
-      <div class="modal-footer">
-        <a href="/assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" class="btn btn-primary">
+        <iframe src="./assets/Piya_Dutta_CV.pdf" id="cv-iframe" title="Piya Dutta CV PDF Preview"></iframe>
+        <a href="./assets/Piya_Dutta_CV.pdf" download="Piya_Dutta_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
           <i class="fa-solid fa-download"></i> Download PDF (Piya_Dutta_CV.pdf)
         </a>
         <button class="btn btn-secondary" id="close-cv-modal-btn">Close</button>
@@ -798,6 +797,6 @@
   <div id="toast-container" class="toast-container"></div>
 
   <!-- Main JavaScript File -->
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
